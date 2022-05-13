@@ -4,22 +4,7 @@ import countriesJson from "./countries.json";
 import TopPage from "./pages/TopPage";
 import "./App.css";
 import WorldPage from "./pages/WorldPage";
-
-type CountryDataType = {
-  date: string;
-  newConfirmed: number;
-  totalConfirmed: number;
-  newRecovered: number;
-  totalRecovered: number;
-};
-
-interface SingleCountriesDataType {
-  Country: string;
-  NewConfirmed: number;
-  TotalConfirmed: number;
-}
-
-interface AllCountriesDataTypeArray extends Array<SingleCountriesDataType> {}
+import { CountryDataType, AllCountriesDataTypeArray } from "./types";
 
 function App() {
   const [loading, setLoading] = useState<boolean>(false);

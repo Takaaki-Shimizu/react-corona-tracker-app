@@ -2,22 +2,7 @@ import Title from "../components/Title";
 import Selector from "../components/Selector";
 import Results from "../components/Result";
 import Header from "../components/Header";
-
-type TopPageType = {
-  countriesJson: {
-    Country: string;
-    Slug: string;
-  }[];
-  setCountry: React.Dispatch<React.SetStateAction<string>>;
-  countryData: {
-    date: string;
-    newConfirmed: number;
-    totalConfirmed: number;
-    newRecovered: number;
-    totalRecovered: number;
-  };
-  loading: boolean;
-};
+import { TopPageType } from "../types";
 
 const TopPage = ({
   countriesJson,

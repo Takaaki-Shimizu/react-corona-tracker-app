@@ -1,15 +1,5 @@
 import Loading from "./Loading";
-
-type ResultsType = {
-  countryData: {
-    date: string;
-    newConfirmed: number;
-    totalConfirmed: number;
-    newRecovered: number;
-    totalRecovered: number;
-  };
-  loading: boolean;
-};
+import { ResultsType } from "../types";
 
 const Results = ({ countryData, loading }: ResultsType) => {
   const { date, newConfirmed, totalConfirmed, newRecovered, totalRecovered } =
